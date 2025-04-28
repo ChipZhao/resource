@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教学资源下载中心</title>
+    <style>
+        body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 5px solid #3498db;
+            margin-bottom: 40px;
+        }
+
+        .subject-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .subject-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: -20px -20px 20px -20px;
+            text-align: center;
+        }
+
+        .chinese { background-color: #27ae60; }
+        .math { background-color: #2980b9; }
+        .english { background-color: #e74c3c; }
+        .science { background-color: #9b59b6; }
+
+        .grade-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .grade-item {
+            margin: 15px 0;
+        }
+
+        .grade-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            padding-left: 5px;
+            border-left: 3px solid #3498db;
+        }
+
+        .year-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .download-link {
+            display: block;
+            padding: 8px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #2c3e50;
+            text-align: center;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .download-link:hover {
+            background-color: #bdc3c7;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .year-2021 { border-left: 3px solid #1abc9c; }
+        .year-2022 { border-left: 3px solid #3498db; }
+        .year-2023 { border-left: 3px solid #e74c3c; }
+        .year-2024 { border-left: 3px solid #f39c12; }
+
+        @media (max-width: 768px) {
+            .subject-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .year-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>春季学期期中试卷下载中心</h1>
+ <p>更新时间：<span id="date"></span></p>
+<div>
+  <a href="index.html" class=>返回首页</a>
+</div>
+    
+    <div class="subject-container">
+        <!-- 语文 -->
+        <div class="subject-card">
+            <h2 class="chinese">语 文</h2>
+            <ul class="grade-list">
+                <li class="grade-item">
+                    <div class="grade-title">一年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\1语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\1语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\1语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\1语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">二年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\2语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\2语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\2语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\2语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">三年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\3语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\3语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\3语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\3语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">四年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\4语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\4语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\4语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\4语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">五年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\5语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\5语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\5语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\5语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">六年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\6语文.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\6语文.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\6语文.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\6语文.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 数学 -->
+        <div class="subject-card">
+            <h2 class="math">数 学</h2>
+            <ul class="grade-list">
+                <li class="grade-item">
+                    <div class="grade-title">一年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\1数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\1数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\1数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\1数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">二年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\2数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\2数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\2数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\2数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">三年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\3数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\3数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\3数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\3数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">四年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\4数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\4数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\4数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\4数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">五年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\5数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\5数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\5数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\5数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">六年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\6数学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\6数学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\6数学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\6数学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 英语 -->
+        <div class="subject-card">
+            <h2 class="english">英 语</h2>
+            <ul class="grade-list">
+                <li class="grade-item">
+                    <div class="grade-title">三年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\3英语.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\3英语.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\3英语.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\3英语.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                 </li>
+                <li class="grade-item">
+                    <div class="grade-title">四年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\4英语.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\4英语.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\4英语.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\4英语.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">五年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\5英语.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\5英语.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\5英语.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\5英语.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                <li class="grade-item">
+                    <div class="grade-title">六年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\6英语.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\6英语.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\6英语.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\6英语.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>              
+               </li>
+            </ul>
+        </div>
+
+        <!-- 科学 -->
+        <div class="subject-card">
+            <h2 class="science">科 学</h2>
+            <ul class="grade-list">
+                <!-- 1-6年级科学内容，结构同上 -->
+                <li class="grade-item">
+                    <div class="grade-title">三年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\3科学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\3科学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\3科学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\3科学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+                </li>
+                 <li class="grade-item">
+                    <div class="grade-title">四年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\4科学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\4科学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\4科学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\4科学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+ <li class="grade-item">
+                    <div class="grade-title">五年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\5科学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\5科学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\5科学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\5科学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>
+ <li class="grade-item">
+                    <div class="grade-title">六年级</div>
+                    <div class="year-container">
+                        <a href="2021sm\6科学.pdf" class="download-link year-2021">📥2021年</a>
+                        <a href="2022sm\6科学.pdf" class="download-link year-2022">📥2022年</a>
+                        <a href="2023sm\6科学.pdf" class="download-link year-2023">📥2023年</a>
+                        <a href="2024sm\6科学.pdf" class="download-link year-2024">📥2024年</a>
+                    </div>            
+         </ul>
+        </div>
+    </div>
+
+
+ <script>
+        // 自动显示当前日期
+        document.getElementById('date').innerHTML = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>
