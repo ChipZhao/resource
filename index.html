@@ -68,7 +68,14 @@
             margin-bottom: 1rem;
 			font-size: 20px;
         }
-		
+		.logo {
+		  display: flex;
+		  align-items: center; /* 垂直居中 */
+		  gap: 10px; /* 可选：图片与文字间距 */
+		}
+		.logo-text {
+				    font-size: 30px;
+		}
 		  /* 教务动态网格布局 */
 		        .dynamic-grid {
 		            display: grid;
@@ -167,10 +174,10 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo">
-				<img src="logo.png" alt="教务服务平台">
+			<a href="index.html" class="logo">
+			    <img src="logo.png" alt="教务服务平台">
+			    <span class="logo-text">教务服务平台</span>
 			</a>
-			<a href="index.html" class="logo">教务服务平台</a>
             <div class="nav-links">
                 <a href="index.html" class="nav-item">首页</a>				
                 <a href="#教育教学-section" class="nav-item">教育教学</a>
