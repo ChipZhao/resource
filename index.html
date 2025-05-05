@@ -54,8 +54,8 @@
         }
         /* 功能板块 */
         .section {
-            background: white;
-            border-radius: 5px;
+            background: lightyellow;
+            border-radius: 10px;
             padding: 1rem;
             margin-bottom: 1rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
@@ -63,7 +63,7 @@
 
         .section h2 {
             color: #005500;
-            border-left: 10px solid #ffaa00;
+            border-left: 5px solid #ffaa00;
             padding-left: 1rem;
             margin-bottom: 1rem;
 			font-size: 20px;
@@ -97,19 +97,19 @@
 		            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 		        }
 				  				
-				  /* 响应式设计 */
-				        @media (max-width: 768px) {
-				            .nav {
-				                flex-direction: column;
-				                gap: 1rem;
-				            }
+		/* 响应式设计 */
+		@media (max-width: 768px) {
+		       .nav {
+		         flex-direction: column;
+		        gap: 1rem;
+		        }
 				            
-				            .section {
-				                padding: 1.5rem;
-				            }
+		      .section {
+		     padding: 1.5rem;
+		       }
 				            
-				            .dynamic-grid {
-				                grid-template-columns: 1fr;
+		    .dynamic-grid {
+		    grid-template-columns: 1fr;
 				            }
 				        }
 
@@ -272,7 +272,15 @@
 				    <a href="秋季学期期末试卷.html" class="download-link">查看下载 →</a>
 				</div>
             </div>
+			
         </section>
+		<section class="section">
+			<div class="section" id="留言板-section">
+		    <h2>留言板</h2>
+			<!-- Cbox 简易留言板 -->
+			<div id="留言板" style="width:300px;height:400px"></div>
+			<script src=https://my.cbox.ws/chipz async></script>
+		</section>
     </main>
 
     <footer class="footer" style="text-align: center; padding: 2rem; color: #666;">
