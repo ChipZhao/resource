@@ -34,12 +34,9 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            color: darkgreen;
-            font-size: 1.25rem;
-			font-weight: 600;
-            text-decoration: none;
+        .navbar {
+         display: flex;
+         justify-content: space-between;
         }
 
         /* 主要内容区 */
@@ -69,12 +66,18 @@
 			font-size: 20px;
         }
 		.logo {
+		  color: darkgreen;
+			font-size: 1.25rem;
+			font-weight: 100;
+			text-decoration: none;
 		  display: flex;
 		  width: 500px;  /* 容器总宽度 */
 		  padding: 5px;  /* 内边距 */
 		  align-items: center; /* 垂直居中 */
 		  vertical-align: auto;
-		  gap: 2px; /* 可选：图片与文字间距 */		  
+		  gap: 2px; /* 可选：图片与文字间距 */
+		  
+		  
 		}
 		.logo img {
 		  max-width: 80px;   /* 最大宽度限制 */
@@ -183,6 +186,8 @@
 			 .logo img {
 			    max-width: 80px;
 			    max-height: 50px;
+				margin-left: 0;
+				justify-content: center;
 			  }
         }
     </style>
