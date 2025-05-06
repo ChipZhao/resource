@@ -70,9 +70,20 @@
         }
 		.logo {
 		  display: flex;
+		  width: 500px;  /* 容器总宽度 */
+		  padding: 5px;  /* 内边距 */
 		  align-items: center; /* 垂直居中 */
 		  vertical-align: auto;
-		  gap: 2px; /* 可选：图片与文字间距 */
+		  gap: 2px; /* 可选：图片与文字间距 */		  
+		}
+		.logo img {
+		  max-width: 80px;   /* 最大宽度限制 */
+		  max-height: 40px;  /* 最大高度限制 */
+		  border-radius: 20%;
+		  width: auto;       /* 保持原始宽高比 */
+		  height: auto;      /* 保持原始宽高比 */
+		  display: block;    /* 消除图片底部间隙 */
+		  object-fit: contain; /* 保持图片完整显示 */
 		}
 		.logo-text {
 				    font-size: 25px;
@@ -169,11 +180,15 @@
             .section {
                 padding: 1rem;
             }
+			 .logo img {
+			    max-width: 80px;
+			    max-height: 50px;
+			  }
         }
     </style>
 </head>
 <body>
-    <header class="header">
+	<header class="header">
         <nav class="nav">
 			<a href="index.html" class="logo">
 			    <img src="logo.png" alt="教务服务平台">
