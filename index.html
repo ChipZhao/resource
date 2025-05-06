@@ -10,21 +10,21 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', '微软雅黑', sans-serif;宋体;
-			font-size: 15px;
-			color: black;
-			}
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            font-size: 15px;
+            color: #333;
+        }
 
         body {
             background: #55aa00;
-            line-height: 1.2;
-			
+            line-height: 1.5;
         }
+
         /* 头部导航 */
-        .header {background: honeydew;
+        .header {
+            background: honeydew;
             padding: 1rem;
             box-shadow: 0 1px 3px rgba(231, 255, 164, 0.1);
-			text-indent: 2em;			
         }
 
         .nav {
@@ -34,27 +34,24 @@
             justify-content: space-between;
             align-items: center;
         }
-        .navbar {
-         display: flex;
-         justify-content: space-between;
-        }
 
         /* 主要内容区 */
         .container {
-					
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
+
         a {
-          text-decoration: none; /* 去除所有下划线 */
+            text-decoration: none;
         }
+
         /* 功能板块 */
         .section {
             background: lightyellow;
             border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
@@ -62,115 +59,90 @@
             color: #005500;
             border-left: 5px solid #ffaa00;
             padding-left: 1rem;
-            margin-bottom: 1rem;
-			font-size: 20px;
+            margin-bottom: 1.2rem;
+            font-size: 1.3rem;
         }
-		.logo {
-		  color: darkgreen;
-			font-size: 1.25rem;
-			font-weight: 100;
-			text-decoration: none;
-		  display: flex;
-		  width: 500px;  /* 容器总宽度 */
-		  padding: 5px;  /* 内边距 */
-		  align-items: center; /* 垂直居中 */
-		  vertical-align: auto;
-		  gap: 2px; /* 可选：图片与文字间距 */
-		  
-		  
-		}
-		.logo img {
-		  max-width: 80px;   /* 最大宽度限制 */
-		  max-height: 40px;  /* 最大高度限制 */
-		  border-radius: 20%;
-		  width: auto;       /* 保持原始宽高比 */
-		  height: auto;      /* 保持原始宽高比 */
-		  display: block;    /* 消除图片底部间隙 */
-		  object-fit: contain; /* 保持图片完整显示 */
-		}
-		.logo-text {
-				    font-size: 25px;
-		}
-		  /* 教务动态网格布局 */
-		        .dynamic-grid {
-		            display: grid;
-		            gap: 1rem;
-		            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		            list-style: none;
-		            padding: 0;
-		        }
-		
-		        .dynamic-grid > li {
-		            border: 1px solid #eee;
-		            padding: 0.6rem;
-		            border-radius: 6px;
-		            transition: transform 0.2s;
-		        }
-		
-		        .dynamic-grid > li:hover {
-		            transform: translateY(-3px);
-		            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-		        }
-				  				
-		/* 响应式设计 */
-		@media (max-width: 768px) {
-		       .nav {
-		         flex-direction: column;
-		        gap: 1rem;
-		        }
-				            
-		      .section {
-		     padding: 1.5rem;
-		       }
-				            
-		    .dynamic-grid {
-		    grid-template-columns: 1fr;
-				            }
-				        }
+
+        .logo {
+            color: darkgreen;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 40px;
+            border-radius: 20%;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+
+        /* 动态网格布局 */
+        .dynamic-grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            padding: 0;
+            list-style: none;
+        }
+
+        .dynamic-grid > li {
+            border: 1px solid #eee;
+            padding: 0.8rem;
+            border-radius: 6px;
+            transition: transform 0.2s;
+            background: white;
+        }
+
+        .dynamic-grid > li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
 
         /* 资源下载列表 */
         .download-list {
             display: grid;
-            gap: 0.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));				
-					
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
 
         .download-card {
             border: 1px solid #eee;
             padding: 1.5rem;
             border-radius: 6px;
+            background: white;
             transition: transform 0.2s;
-						
         }
 
         .download-card:hover {
             transform: translateY(-3px);
-			
         }
 
         .download-card h3 {
             color: #3498db;
-            margin-bottom: 0.5rem;
-			font-size: 16px;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
         }
 
         .download-link {
-            color: #7f8c8d;
-            text-decoration: none;
             display: inline-block;
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
+            padding: 0.6rem 1.2rem;
             border: 2px solid #3498db;
             border-radius: 4px;
+            color: #3498db;
+            margin-top: 1rem;
             transition: all 0.3s;
-			font-size: 20px;
         }
 
         .download-link:hover {
             background: #3498db;
             color: white;
-			
         }
 
         /* 响应式设计 */
@@ -179,44 +151,51 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            
-            .section {
-                padding: 1rem;
+
+            .logo {
+                flex-direction: column;
+                text-align: center;
             }
-			 .logo img {
-			    max-width: 80px;
-			    max-height: 50px;
-				margin-left: 0;
-				justify-content: center;
-			  }
+
+            .dynamic-grid,
+            .download-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 页脚样式 */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            background: honeydew;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-	<header class="header">
+    <header class="header">
         <nav class="nav">
-			<a href="index.html" class="logo">
-			    <img src="logo.png" alt="教务服务平台">
-			    <span class="logo-text">教务服务平台</span>
-			</a>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="教务服务平台">
+                <span class="logo-text">教务服务平台</span>
+            </a>
             <div class="nav-links">
                 <a href="index.html" class="nav-item">首页</a>				
-                <a href="#教育教学-section" class="nav-item">教育教学</a>
-                <a href="#教务动态-section" class="nav-item">教务动态</a>
-                <a href="#资源下载-section" class="nav-item">资源下载</a>
+                <a href="#教育教学" class="nav-item">教育教学</a>
+                <a href="#教务动态" class="nav-item">教务动态</a>
+                <a href="#资源下载" class="nav-item">资源下载</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
-		<!-- 常用网站链接板块 -->
-		<section class="section">
-			<div class="section" id="常用网站-section">
-		    <h2>常用网站</h2>
-		    <div>&nbsp;</div>
-		    <ul class="dynamic-grid">
-		        <li><a href="https://zwfw.gansu.gov.cn/" class=>甘肃政务服务网</a></li>
-				<li><a href="https://basic.smartedu.cn/" class=>国家中小学智慧教育平台</a></li>
+        <!-- 常用网站 -->
+        <section class="section" id="常用网站">
+            <h2>常用网站</h2>
+            <ul class="dynamic-grid">
+                <li><a href="https://zwfw.gansu.gov.cn/">甘肃政务服务网</a></li>
+                <li><a href="https://basic.smartedu.cn/" class=>国家中小学智慧教育平台</a></li>
 				<li><a href="https://www.gs.smartedu.cn/" class=>甘肃智慧教育平台</a></li>
 				<li><a href="http://www.longnanedu.cn/" class=>陇南市智慧教育云平台</a></li>
 				<li><a href="https://gszcxt.rst.gansu.gov.cn/zcfwpt/home" class=>甘肃省职称申报评审管理信息系统</a></li>
@@ -225,52 +204,46 @@
 				<li><a href="https://gsjxjy.rst.gansu.gov.cn/ptconsole/#/home/query-cert" class=>甘肃省专业技术人员继续教育工作平台</a></li>
 				<li><a href="http://topedu.ybep.com.cn/new_x/project/index.php" class=>鼎尖资源网</a></li>
 				<li><a href="https://we.cnki.net/check/zcps/gs/main.html#/login" class=>甘肃省人事职称评审论文审核系统</a></li>
-		    </ul>
-		</section>
-		
-        <!-- 教育教学板块 -->
-        <section class="section">
-			<div class="section" id="教育教学-section">
+            </ul>
+        </section>
+
+        <!-- 教育教学 -->
+        <section class="section" id="教育教学">
             <h2>教育教学</h2>
-            <div>&nbsp;</div>
             <ul class="dynamic-grid">
-				<li><a href="https://zwfw.gansu.gov.cn/gsspace/themeWrapper/smartGuide?id=662&region=621202000000" class=>新生网上报名入口</a></li>
+                <li><a href="https://zwfw.gansu.gov.cn/gsspace/themeWrapper/smartGuide?id=662&region=621202000000" class=>新生网上报名入口</a></li>
                 <li>2025年春季学期教师课堂技能竞赛</li>
                 <li>2025年春季学期一二三年级学生讲故事比赛</li>
                 <li>2025年春季学期各教研组公开课及教研活动</li>
             </ul>
         </section>
 
-        <!-- 教务动态板块 -->
-        <section class="section">
-			<div class="section" id="教务动态-section">
+        <!-- 教务动态 -->
+        <section class="section" id="教务动态">
             <h2>教务动态</h2>
-			<p>更新日期：<span id="date"></span></p>
-			<p>&nbsp;</p>
+            <p>更新日期：<span id="date"></span></p>
             <ul class="dynamic-grid">
-                <li><a href="教育入学一件事常见问题解答.html" class=>教育入学一件事常见问题解答</a></li>          
-				<li><a href="教务动态\May day.html" class=>2025年劳动节放假调休通知</a></li>
+                <li><a href="教育入学一件事常见问题解答.html" class=>教育入学一件事常见问题解答</a></li>
+                <li><a href="教务动态\May day.html" class=>2025年劳动节放假调休通知</a></li>
                 <li><a href="internal resource.html" class=>2025年春季学期周中心工作</a></li>
-				<li><a href="internal resource.html" class=>新学期作息时间表</a></li>
-				<li><a href="internal resource.html" class=>新学期教师教案系列表册</a></li>
-				<li><a href="score table\教案检查评分表.pdf" class=>教师教案检查评分表</a></li>
-				<li><a href="score table\作业检查评分表.pdf" class=>学生作业检查评分表</a></li>
+                <li><a href="internal resource.html" class=>新学期作息时间表</a></li>
+                <li><a href="internal resource.html" class=>新学期教师教案系列表册</a></li>
+                <li><a href="score table\教案检查评分表.pdf" class=>教师教案检查评分表</a></li>
+                <li><a href="score table\作业检查评分表.pdf" class=>学生作业检查评分表</a></li>
             </ul>
         </section>
 
-        <!-- 资源下载板块 -->
-        <section class="section">
-			<div class="section" id="资源下载-section">
+        <!-- 资源下载 -->
+        <section class="section" id="资源下载">
             <h2>资源下载</h2>
             <div class="download-list">
-				
-				<!-- 春季学期期中试卷 -->
-				<div class="download-card">
-				    <h3>春季学期期中试卷下载</h3>
-				    <p>包含各年级各学科期中试卷</p>
-				    <p>更新日期：2025.4.22</p>
-				    <a href="春季学期期中试卷.html" class="download-link">查看下载 →</a>
-				</div>
+                <!-- 春季学期期中试卷 -->
+                <div class="download-card">
+                    <h3>春季学期期中试卷下载</h3>
+                    <p>包含各年级各学科期中试卷</p>
+                    <p>更新日期：2025.4.22</p>
+                    <a href="春季学期期中试卷.html" class="download-link">查看下载 →</a>
+                </div>
                 <!-- 春季学期期末试卷 -->
                 <div class="download-card">
                     <h3>春季学期期末试卷下载</h3>
@@ -278,32 +251,31 @@
                     <p>更新日期：2025.4.20</p>
                     <a href="春季学期期末试卷.html" class="download-link">查看下载 →</a>
                 </div>
-				<!-- 秋季学期期中试卷 -->
-				<div class="download-card">
-				    <h3>秋季学期期中试卷下载</h3>
-				    <p>包含各年级各学科期中试卷</p>
-				    <p>更新日期：2025.4.25</p>
-				    <a href="秋季学期期中试卷.html" class="download-link">查看下载 →</a>
-				</div>
-				<!-- 秋季学期期末试卷 -->
-				<div class="download-card">
-				    <h3>秋季学期期末试卷下载</h3>
-				    <p>包含各年级各学科期末试卷</p>
-				    <p>更新日期：2025.4.21</p>
-				    <a href="秋季学期期末试卷.html" class="download-link">查看下载 →</a>
-				</div>
+                <!-- 秋季学期期中试卷 -->
+                <div class="download-card">
+                    <h3>秋季学期期中试卷下载</h3>
+                    <p>包含各年级各学科期中试卷</p>
+                    <p>更新日期：2025.4.25</p>
+                    <a href="秋季学期期中试卷.html" class="download-link">查看下载 →</a>
+                </div>
+                <!-- 秋季学期期末试卷 -->
+                <div class="download-card">
+                    <h3>秋季学期期末试卷下载</h3>
+                    <p>包含各年级各学科期末试卷</p>
+                    <p>更新日期：2025.4.21</p>
+                    <a href="秋季学期期末试卷.html" class="download-link">查看下载 →</a>
+                </div>
             </div>
+        </section>
     </main>
 
-    <footer class="footer" style="text-align: center; padding: 2rem; color: #666;">
-        <p>免责声明：本站资源仅限本校人员使用&nbsp;&nbsp;&nbsp;&nbsp;钟楼小学教务处</p>
-		<!-- 国际化版本 -->
-		        <div class="i18n-version">
-		            <p class="english-version">
-		                Copyright &copy; 2025</span> 
-		                <span class="company-en">ChipZhao</span> 
-		                All Rights Reserved
+    <footer class="footer">
+        <p>免责声明：本站资源仅限本校人员使用  钟楼小学教务处</p>
+        <p>Copyright &copy; 2025 ChipZhao All Rights Reserved</p>
     </footer>
-	<script>        // 自动显示当前日期        document.getElementById('date').innerHTML = new Date().toLocaleDateString();    </script>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('zh-CN');
+    </script>
 </body>
 </html>
